@@ -398,3 +398,46 @@ iframe {
     -webkit-text-fill-color: #FFDF2A !important;
     color: #FFDF2A !important;
 }
+
+/* FINAL FIX — FULL-WIDTH BACKGROUND & HERO OVERFLOW */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+    background-color: #fffaf0;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: clip;
+    background-color: #fffaf0;
+}
+
+.hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Keep the animation centred on smaller screens */
+@media (max-width: 700px) {
+    .hero-visual {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero {
+        overflow: clip;
+    }
+}
+
