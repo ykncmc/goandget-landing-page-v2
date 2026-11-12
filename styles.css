@@ -441,3 +441,23 @@ body {
     }
 }
 
+/* RESTORE HERO CONTENT SIDE SPACING */
+.hero {
+    padding-left: max(24px, calc((100vw - 1180px) / 2));
+    padding-right: max(24px, calc((100vw - 1180px) / 2));
+}
+
+/* MOBILE SIDE SPACING */
+@media (max-width: 700px) {
+    .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+
