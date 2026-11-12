@@ -375,3 +375,26 @@ iframe {
         max-width: 100%;
     }
 }
+
+
+/* FINAL TYPOGRAPHY REFINEMENT
+   Keep heading text clean and readable: solid blue accent, not multicolour letters.
+   Background gradients and existing section colour treatments remain unchanged. */
+.gradient-text,
+.hero h1 .gradient-text {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #087BCB !important;
+    color: #087BCB !important;
+}
+
+/* Keep the existing single-colour yellow heading accents consistent. */
+.intro-inner h2 span,
+.qr-copy h2 span,
+.light-heading h2 span,
+.download-inner h2 span {
+    background: none !important;
+    -webkit-text-fill-color: #FFDF2A !important;
+    color: #FFDF2A !important;
+}
